@@ -3,8 +3,48 @@
   padding: 0;
   font-family: 'Space Mono', monospace;
 }
+html {
+  scroll-behavior: smooth;
+}
+
+h1, h2, h3, h4, h5, h6, p{
+  letter-spacing: 0;
+  font-weight: normal;
+  position: relative;
+  color: #ffffff;
+  margin: 0
+}
+
+h1 {
+  font-size: 24px;
+  font-weight: 600;
+  padding: 10px;
+}
+h2 {
+  font-size: 22px;
+}
+h3 {
+  font-size: 18px;
+}
+h4 {
+  font-size: 16px
+}
+h5 {
+  font-size: 14px
+}
+h6 {
+  font-size: 13px
+}
+p{
+  padding: 10px 0 10px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+/*---------------------------- header-area ----------------------------*/
+
 .header{
-  min-height: 100vh;
+  min-height: 5vh;
   width: 100%;
   background-color: #151515;
   background-position: center;
@@ -19,30 +59,6 @@
   font-weight: 500;
   transform: translate(0%, -10%);
 }
-.pre-footer{
-  bottom: 0%;
-  width: 100%;
-  background-color: #151515;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  text-align: center;
-}
-.footer{
-  min-height: 5vh;
-  width: 100%;
-  background-color: #aa8a8a;
-  background-position: center;
-  background-size: cover;
-  position: absolute;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */
-  text-align: center;
-}
 nav{
   background-color: #151515;
   display: flex;
@@ -53,6 +69,9 @@ nav{
 nav img{
   width: 40px;
   border-radius: 50%;
+}
+nav .fa{
+  display: none;
 }
 .nav-links{
   flex: 1;
@@ -85,6 +104,16 @@ nav img{
   font-size: 16px;
   font-weight: 400;
 }
+
+/*---------------------------- body-area ----------------------------*/
+
+.body{
+  min-height: 100vh;
+  background-color: #151515;
+}
+
+/*---------------------------- landing-page ----------------------------*/
+
 .textbox{
   width: 90%;
   color: rgb(255, 255, 255);
@@ -115,11 +144,8 @@ nav img{
   background: rgba(122, 122, 122, 0.8) ;
   transition: 1s;
 }
-nav .fa{
-  display: none;
-}
 .socials a{
-  padding: 20px;
+  padding: 10px 20px;
   color: #fff;
   border-bottom: 1px solid #151515;
   transition: 1s;
@@ -131,19 +157,7 @@ nav .fa{
 }
 .icons-btn{
   padding: 10px;
-  margin: 30px 0 10px;
-}
-h1{
-  color: rgb(255, 255, 255);
-  font-size: 25px;
-  font-weight: 600;
-  padding: 10px;
-}
-p{
-  color: rgb(255, 255, 255);
-  margin: 10px 0 10px;
-  font-size: 16;
-  font-weight: 400;
+  margin: 20px 0 0px;
 }
 .content {
   position: absolute;
@@ -219,6 +233,47 @@ p{
     transform: translate3d(0, -16.66%, 0);
   }
 }
+
+/*---------------------------- project-page ----------------------------*/
+
+.projectbox {margin-top: 85px;}
+/* .blog_main .span {font-size: 17px; line-height: 20px; color: #2d2d2d;} */
+.project_two {box-shadow: #ddd 0px 0px 10px 0px; margin-bottom: 90px;}
+.our_text_box {padding: 1px 30px 1px 1px;}
+.proj_img figure {margin: 0;}
+.proj_img figure img {
+  width: 400px;}
+/* .awesome {padding-bottom:40px; font-size: 26px; line-height: 38px; color:#333334; }  */
+.proj_textbox p {padding-bottom: 50px; color: #ffffff; display: inline-block; } 
+/* .flot_left1 {float: left; padding: 0;}  */
+/* ul.like {float: right;}
+ul.like li {display: inline-block;}
+ul.like li a {display: inline-block; color: #3c3c3c;}
+ul.like li img {padding: 0px 10px 0px 40px;} */
+/*---------------------------- blog-page ----------------------------*/
+
+/* .blogbox{
+  position: absolute; */
+  /* top: 0%;
+} */
+.blogboxcontainer{
+  margin: auto;
+  width: 80%;
+  position:  relative;
+  text-align: center;
+}
+.blogboxcontainer p{
+  text-indent: 60px;
+  padding: 10px;
+  text-align: justify;
+  text-justify: inter-word;
+}
+.blogboxcontainer h2 {
+  padding: 10px;
+}
+
+/*---------------------------- mobile responsive ----------------------------*/
+
 @media(max-width: 700px){
   nav img{
     width: 30px;
@@ -262,7 +317,36 @@ p{
     font-size: 20px;
     padding: 10px;
   }
-  /* p{
-    font-size: 30;
-  } */
 }
+
+/*---------------------------- pre-footer-area ----------------------------*/
+/* 
+.pre-footer{
+  bottom: 0%;
+  width: 100%;
+  background-color: #151515;
+  background-position: center;
+  background-size: cover;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+} */
+
+/*---------------------------- footer-area ----------------------------*/
+
+.footer{
+  /* min-height: 20vh; */
+  width: 100%;
+  background-color: #aa8a8a;
+  /* background-position: center; */
+  /* background-size: cover; */
+  position: relative;
+  /* top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%); */ 
+  text-align: center;
+}
+
+/*---------------------------- end footer-area ----------------------------*/

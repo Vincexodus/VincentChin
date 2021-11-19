@@ -4,7 +4,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name = "viewport" content = "with=device-width, initial-scale = 1.0">
+
+
     <title>Vincent Chin - Computer Science Student</title>
+    
     <script src="https://use.fontawesome.com/f7d86628ba.js"></script>
     <link rel="icon" href="images/Pixel Art.png">
     <link rel="stylesheet" href="style.css">
@@ -12,7 +15,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <body>
-      <section class="header">
+      <!-- header  -->
+      <div class="header">
         <nav>
           <a href="index.html"><img src="images/Pixel Art - White Bg.png"></a>
           <p>Vincent Chin</p>
@@ -20,15 +24,19 @@
             <i class="fa fa-times" onclick="hideMenu()"></i>
             <ul>
               <li class="active"><a href="index.html">Home</a></li>
-              <li><a href="#project.html">Projects</a></li>
-              <li><a href="#about.html">About</a></li>
-              <li><a href="#blog.html">Blog</a></li>
-              <li><a href="#contact.html">Contact</a></li>
+              <li><a href="project.html">Projects</a></li>
+              <li><a href="about.html">About</a></li>
+              <li><a href="blog.html">Blog</a></li>
+              <li><a href="contact.html">Contact</a></li>
             </ul>
           </div>
           <i class="fa fa-bars" onclick="showMenu()"></i>
         </nav>
-        <!-- Body Beginning -->
+      </div>
+
+
+      <!-- Body Beginning -->
+      <div class="body">
         <div class="textbox">
           <div class="content">
             <div class="content__container">
@@ -56,42 +64,44 @@
               </div>
             </section>
         </div>
-        <!-- Body Ending -->
-      </section>
-      <section class="pre-footer">
-        <p>Minimalistic Yet Simple</p>
-      </section>
-      <section class="footer">
-        <p>This is the footer</p>
-      </section>
-    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-    <script type="text/javascript">
-      //Toggle Menu
-      var navLinks = document.getElementById("navLinks");
-      function showMenu()
-      {
-        document.getElementsByClassName("fa fa-times")[0].style.color = "#151515";
-        // console.log (closeBtn)
-        navLinks.style.right = "0";
-        // closeBtn.style.color = "#151515";
-      }
-      function hideMenu()
-      {
-        navLinks.style.right = "-175px"
-      }
-      //age display
-      var dob = new Date("2002/10/23");  
-      var month_diff = Date.now() - dob.getTime();  
-      var age_dt = new Date(month_diff);   
-      var year = age_dt.getUTCFullYear();  
-      var age = Math.abs(year - 1970); 
-      document.getElementById("age").innerHTML = age;
+      </div>
+      <!-- Body Ending -->
+
       
-      $('.nav-links').on('click', 'li', function()
-      {
-        $('.nav-links li.active').removeClass('active');
-        $(this).addClass('active');
-      });
-    </script>
+      <!-- Footer -->
+      <div class="footer">
+        <p>This is the footer</p>
+      </div>
+      <!-- Footer ending  -->
+      <!-- script -->
+      <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+      <script type="text/javascript">
+        //Toggle Menu
+        var navLinks = document.getElementById("navLinks");
+        function showMenu()
+        {
+          document.getElementsByClassName("fa fa-times")[0].style.color = "#151515";
+          // console.log (closeBtn)
+          navLinks.style.right = "0";
+          // closeBtn.style.color = "#151515";
+        }
+        function hideMenu()
+        {
+          navLinks.style.right = "-175px"
+        }
+        //age display
+        var dob = new Date("2002/10/23");  
+        var month_diff = Date.now() - dob.getTime();  
+        var age_dt = new Date(month_diff);   
+        var year = age_dt.getUTCFullYear();  
+        var age = Math.abs(year - 1970); 
+        document.getElementById("age").innerHTML = age;
+        
+        // $('.nav-links').on('click', 'li', function()
+        // {
+        //   $('.nav-links li.active').removeClass('active');
+        //   $(this).addClass('active');
+        // });
+      </script>
     </body>
 </html>
