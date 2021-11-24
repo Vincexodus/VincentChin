@@ -18,7 +18,7 @@ h1, h2, h3, h4, h5, h6, p{
 h1 {
   font-size: 24px;
   font-weight: 600;
-  padding: 10px;
+  padding: 20px 0 10px;
 }
 h2 {
   font-size: 22px;
@@ -44,9 +44,9 @@ p{
 /*---------------------------- header-area ----------------------------*/
 
 .header{
+  z-index: 1;
   min-height: 5vh;
   width: 100%;
-  background-color: #151515;
   background-position: center;
   background-size: cover;
   position: relative;
@@ -75,6 +75,7 @@ nav .fa{
 }
 .nav-links{
   flex: 1;
+  overflow: hidden;
   text-align: right;
 }
 .nav-links ul li{
@@ -103,6 +104,15 @@ nav .fa{
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
+}
+.sticky {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
+.sticky + .body {
+  padding-top: 60px;
 }
 
 /*---------------------------- body ----------------------------*/
@@ -133,7 +143,7 @@ nav .fa{
   display: inline-block;
   text-decoration: none;
   color :rgb(255, 255, 255);
-  border: 1px solid rgb(255, 255, 255);
+  border: 3px solid rgb(255, 255, 255);
   padding: 10px 20px;
   font-size: 16px;
   background: transparent;
@@ -141,7 +151,7 @@ nav .fa{
   cursor: pointer;
 }
 .hero-btn:hover{
-  border: 1px solid rgba(0, 0, 0, 0.8);
+  border: 3px solid rgba(0, 0, 0, 0.8);
   background: rgba(122, 122, 122, 0.8) ;
   transition: 1s;
 }
@@ -268,7 +278,7 @@ nav .fa{
 }
 
 /*---------------------------- blog-page ----------------------------*/
-
+/* 
 .chapter-nav{
   flex: 1;
   text-align: center;
@@ -299,7 +309,7 @@ nav .fa{
   text-decoration: none;
   font-size: 16px;
   font-weight: 400;
-}
+} */
 .blogboxcontainer{
   margin: auto;
   width: 80%;
@@ -315,25 +325,50 @@ nav .fa{
   padding: 10px;
 }
 
+/*---------------------------- about-page ----------------------------*/
+
+.about-box{
+  width: 80%;
+  margin: auto;
+  padding: 20px 0px;
+}
+.about-row{
+  margin: 30px 0px 10px;
+  display: flex;
+}
+.about-col{
+  margin: auto;
+  justify-content: space-between;
+  flex-basis: 48%;
+  padding: 0px 40px;
+  overflow: hidden;
+}
+.about-col p{
+  padding: 10px;
+  text-align: justify;
+}
+.profile-col img{
+  width: 500px;
+  border-radius: 50%;
+  transition: 0.2s;
+}
+
 /*---------------------------- contact-page ----------------------------*/
 
 input::placeholder, textarea::placeholder {
   color: #fff;
 }
-
 input:focus::placeholder, textarea:focus::placeholder {
   color: rgba(21, 21, 21, 0.5);
 }
 input:hover::placeholder, textarea:hover::placeholder {
   color: rgba(21, 21, 21, 0.75);
 }
-
 #form {
   position: relative;
   width: 50%;
   margin: 50px auto 20px;
 }
-
 input {
   font-size: 16px;
   width: 470px;
@@ -352,12 +387,10 @@ input {
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
 }
-
 input:hover {
   background: #ffffff;
   color: #151515;
 }
-
 textarea {
   width: 470px;
   max-width: 470px;
@@ -378,12 +411,10 @@ textarea {
   -moz-transition: all 0.5s ease-in-out;
   -ms-transition: all 0.5s ease-in-out;
 }
-
 textarea:hover {
   background: #ffffff;
   color: #151515;
 }
-
 #submit {
   width: 506px;
   height: 50px;
@@ -399,7 +430,6 @@ textarea:hover {
   border: solid 3px #ffffff;
   border-top: none;
 }
-
 #submit:hover {
   background: #ffffff;
   color: #151515;
@@ -464,8 +494,5 @@ textarea:hover {
   /* background-position: center; */
   /* background-size: cover; */
   position: relative;
-  /* top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%); */ 
   text-align: center;
 }

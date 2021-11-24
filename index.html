@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <body>
       <!-- header  -->
-      <div class="header">
+      <div class="header head">
         <nav>
-          <a href="index.html"><img src="images/Pixel Art - White Bg.png"></a>
+          <img src="images/Pixel Art - White Bg.png"></a>
           <p>Vincent Chin</p>
           <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -35,17 +35,18 @@
       </div>
 
 
+
       <!-- Body Beginning -->
       <div class="body">
-        <div class="textbox">
+        <div class="textbox" >
           <div class="content">
             <div class="content__container">
               <p class="content__container__text">I'm a</p>
               <ul class="content__container__list">
                 <li class="content__container__list__item">Student.</li>
-                <li class="content__container__list__item">Learner.</li>
+                <li class="content__container__list__item">Dreamer.</li>
                 <li class="content__container__list__item">Tech Geek.</li>
-                <li class="content__container__list__item">Crypto Nerd.</li>
+                <li class="content__container__list__item">Crypto Newbie.</li>
                 <li class="content__container__list__item">A.I Beginner.</li>
                 <li class="content__container__list__item">Metaverse Fan.</li>
               </ul>
@@ -53,7 +54,7 @@
           </div>
           <h1>Never Stop Thinking.</h1>
           <p>I'm <span id="age"></span> and currently pursuing Computer Science Degree in Asia Pacific University.
-          <br>I'm passionate in learning fields related to A.I, DeFi, Game development,<br> Social Networking and more...</p>
+          <br>Passionate in learning fields related to A.I, DeFi, Game development,<br> Social Networking and more...</p>
             <a href="" class="hero-btn">More About Me</a>
             <section class="socials">
               <div class="icons-btn">
@@ -67,7 +68,6 @@
       </div>
       <!-- Body Ending -->
 
-      
       <!-- Footer -->
       <div class="footer">
         <p>Minimalistic Yet Simple</p>
@@ -75,33 +75,16 @@
       <!-- Footer ending  -->
       <!-- script -->
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      <script type="text/javascript">
-        //Toggle Menu
-        var navLinks = document.getElementById("navLinks");
-        function showMenu()
-        {
-          document.getElementsByClassName("fa fa-times")[0].style.color = "#151515";
-          // console.log (closeBtn)
-          navLinks.style.right = "0";
-          // closeBtn.style.color = "#151515";
-        }
-        function hideMenu()
-        {
-          navLinks.style.right = "-175px"
-        }
+      <script type="text/javascript"></script>
+      <script src="main.js"></script>
+      <script>
         //age display
         var dob = new Date("2002/10/23");  
         var month_diff = Date.now() - dob.getTime();  
         var age_dt = new Date(month_diff);   
         var year = age_dt.getUTCFullYear();  
-        var age = Math.abs(year - 1970); 
+        var age = Math.abs(year - 1970);
         document.getElementById("age").innerHTML = age;
-        
-        // $('.nav-links').on('click', 'li', function()
-        // {
-        //   $('.nav-links li.active').removeClass('active');
-        //   $(this).addClass('active');
-        // });
       </script>
     </body>
 </html>

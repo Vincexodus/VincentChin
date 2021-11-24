@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <body>
       <!-- header  -->
-      <div class="header">
+      <div class="header head">
         <nav>
-          <a href="index.html"><img src="images/Pixel Art - White Bg.png"></a>
+          <img src="images/Pixel Art - White Bg.png"></a>
           <p>Vincent Chin</p>
           <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -38,18 +38,9 @@
 
       <div class="body">
         <div class="blogbox">
-          <div class="chapter-nav" id="chapterNav">
-            <ul>
-              <li class="active"><a href="#">Chapter X</a></li>
-              <li><a href="#">Chapter X</a></li>
-              <li><a href="#">Chapter X</a></li>
-              <li><a href="#">Chapter X</a></li>
-              <li><a href="#">Chapter X</a></li>
-            </ul>
-          </div>
           <div class="blogboxcontainer">
             <h1>Chapter 1: X </h1>
-            <h2>Lorem ipsum</h2>
+            <h2>Corner to pour thoughts</h2>
             <p>On the other hand, we denounce with righteous indignation and dislike men who are so beguiled
               and demoralized by the charms of pleasure of the moment, so blinded by desire, that they cannot foresee the
               pain and trouble that are bound to ensue; and equal blame belongs to those who fail in their duty through weakness of 
@@ -90,34 +81,8 @@
       <!-- Footer ending  -->
       <!-- script -->
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      <script type="text/javascript">
-        //Toggle Menu
-        var navLinks = document.getElementById("navLinks");
-        function showMenu()
-        {
-          document.getElementsByClassName("fa fa-times")[0].style.color = "#151515";
-          // console.log (closeBtn)
-          navLinks.style.right = "0";
-          // closeBtn.style.color = "#151515";
-        }
-        function hideMenu()
-        {
-          navLinks.style.right = "-175px"
-        }
-        //age display
-        var dob = new Date("2002/10/23");  
-        var month_diff = Date.now() - dob.getTime();  
-        var age_dt = new Date(month_diff);   
-        var year = age_dt.getUTCFullYear();  
-        var age = Math.abs(year - 1970); 
-        document.getElementById("age").innerHTML = age;
-        
-        // $('.chapter-nav').on('click', 'li', function()
-        // {
-        //   $('.chapter-nav li.active').removeClass('active');
-        //   $(this).addClass('active');
-        // });
-      </script>
+      <script src="main.js"></script>c
+      <script type="text/javascript"></script>
     </body>
 </html>
 

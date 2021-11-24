@@ -16,9 +16,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Space+Mono&display=swap" rel="stylesheet">
     <body>
       <!-- header  -->
-      <div class="header">
+      <div class="header head">
         <nav>
-          <a href="index.html"><img src="images/Pixel Art - White Bg.png"></a>
+          <img src="images/Pixel Art - White Bg.png"></a>
           <p>Vincent Chin</p>
           <div class="nav-links" id="navLinks">
             <i class="fa fa-times" onclick="hideMenu()"></i>
@@ -75,34 +75,8 @@
       <!-- Footer ending  -->
       <!-- script -->
       <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
-      <script type="text/javascript">
-        //Toggle Menu
-        var navLinks = document.getElementById("navLinks");
-        function showMenu()
-        {
-          document.getElementsByClassName("fa fa-times")[0].style.color = "#151515";
-          // console.log (closeBtn)
-          navLinks.style.right = "0";
-          // closeBtn.style.color = "#151515";
-        }
-        function hideMenu()
-        {
-          navLinks.style.right = "-175px"
-        }
-        //age display
-        var dob = new Date("2002/10/23");  
-        var month_diff = Date.now() - dob.getTime();  
-        var age_dt = new Date(month_diff);   
-        var year = age_dt.getUTCFullYear();  
-        var age = Math.abs(year - 1970); 
-        document.getElementById("age").innerHTML = age;
-        
-        // $('.nav-links').on('click', 'li', function()
-        // {
-        //   $('.nav-links li.active').removeClass('active');
-        //   $(this).addClass('active');
-        // });
-      </script>
+      <script type="text/javascript"></script>
+      <script src="main.js"></script>
     </body>
 </html>
 
