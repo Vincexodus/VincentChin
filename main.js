@@ -14,8 +14,8 @@ function hideMenu()
 }
 
 // window.onscroll = function() {stickyNav()};
-// Get the offset position of the navbar
 var navbar = document.getElementsByClassName("head")[0];
+// Get the offset position of the navbar
 var sticky = navbar.offsetTop;
 function stickyNav() {
   if (window.pageYOffset >= sticky) {
@@ -25,8 +25,3 @@ function stickyNav() {
   }
 }
 
-// $('.nav-links').on('click', 'li', function()
-// {
-//   $('.nav-links li.active').removeClass('active');
-//   $(this).addClass('active');
-// });
