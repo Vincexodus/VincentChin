@@ -129,23 +129,39 @@ nav .fa{
 
 /*---------------------------- landing-page ----------------------------*/
 
-.textbox{
+.landing-box{
   width: 90%;
-  color: rgb(255, 255, 255);
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
+  margin: auto;
+  padding: 30px 0px;
+}
+.landing-row{
+  margin: 0px 20px;
+  display: flex;
+}
+.landing-col{
+  flex-basis: 48%;
+  padding: 10px;
+  margin: auto;
+}
+.landing-col p{
+  padding: 10px 0px;
+  text-align: justify;
+}
+.landing-col img{
+  padding-top: 20px;
+  width: 75%;
+}
+.textbox{
+  margin: auto;
   text-align: center;
 }
 .textbox p{
-  /* margin: 10px 0 10px; */
   margin: auto;
-  font-size: 16;
+  font-size: 16px;
   color: #fff;
 }
 .intro{
-  width: 50%;
+  width: 80%;
   text-align: justify;
 }
 .hero-btn{
@@ -154,18 +170,21 @@ nav .fa{
   color :rgb(255, 255, 255);
   border: 3px solid rgb(255, 255, 255);
   padding: 10px 20px;
+  margin: 10px 0px 5px;
   font-size: 16px;
   background: transparent;
   position: relative;
   cursor: pointer;
 }
 .hero-btn:hover{
-  border: 3px solid rgba(0, 0, 0, 0.8);
-  background: rgba(122, 122, 122, 0.8) ;
-  transition: 1s;
+  color: #151515;
+  border: 3px solid #151515;
+  background: #ffffff;
+  transition: 0.5s;
 }
 .socials a{
   padding: 10px 20px;
+  margin: 5px;
   color: #fff;
   border-bottom: 1px solid #151515;
   transition: 1s;
@@ -565,6 +584,9 @@ textarea:hover {
     padding: 10px;
   }
   .project-row{
+    flex-direction: column;
+  }
+  .landing-row{
     flex-direction: column;
   }
 }
