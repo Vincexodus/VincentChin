@@ -616,8 +616,14 @@ textarea:hover {
     width: 100%;
     padding: 0px 0px;
   }
+  .content__container{
+    padding: 0px 20px;
+  }
   .content__container__text {
     font-size: 18px;
+  }
+  .content__container__list{
+    padding-left: 80px;
   }
   .content__container__list__item {
     font-size: 18px;
