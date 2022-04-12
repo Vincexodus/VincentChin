@@ -39,10 +39,10 @@
         <div class="contact">
           <h1>Leave A Message!</h1>
           <h3>Feel free to drop me a line! I'll be glad to help!</h3>
-          <form id="form" action="form.php" method="POST">
-            <input id="name" type="text" placeholder="Name">
-            <input id="email" type="text" placeholder="E-mail">
-            <textarea id="message" type="text" placeholder="Message" rows="6" maxlength="1000"></textarea>
+          <form id="form" action="https://formspree.io/f/xwkyrona" method="POST">
+            <input name="Sender Name" type="text" placeholder="Name" required>
+            <input name="Sender Email" type="text" placeholder="E-mail" required>
+            <textarea name="Message" type="text" placeholder="Message" rows="6" maxlength="1000" required></textarea>
             <input id="submit" type="submit" value="Send!">
           </form>
         </div>

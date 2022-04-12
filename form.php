@@ -2,7 +2,7 @@
 if (isset($_POST['Email'])) {
 
     $email_to = "vincent4552@gmail.com";
-    $email_subject = "Portfolio Website Meesage";
+    $email_subject = "Personal Website Contact Page";
 
     function problem($error)
     {
